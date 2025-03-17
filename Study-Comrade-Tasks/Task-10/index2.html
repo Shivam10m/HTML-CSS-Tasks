@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-10</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 450px;
+            background-color: skyblue;
+            padding: 10px;
+        }
+
+        .header, .footer {
+            grid-column: span 4;
+            background-color: gray;
+            height: 50px;
+        }
+
+        .grid-item {
+            background-color: gray;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="header"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><img height="100%" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUI4sBVMzYjCNXGibq8Qdr1G7RjA--WyNIA&s" alt="bird"></div>
+        <div class="grid-item"></div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+</html>
